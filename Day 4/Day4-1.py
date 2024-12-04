@@ -10,11 +10,8 @@ def read_file(file_path):
 
     return lst
 
-lst = read_file('input.txt')
-print(lst)
-
 def crossword_solver(lst):
-    word = "XMAS"
+    word = "MAS"
     total = 0
     rows, cols = len(lst), len(lst[0])
     directions = [(1, 0), (-1, 0), (0, 1), (0, -1), (1, 1), (1, -1), (-1, -1), (-1, 1)]
@@ -34,4 +31,6 @@ def crossword_solver(lst):
                         total += 1
     return total
 
+
+lst = read_file('input.txt')
 print(crossword_solver(lst))
