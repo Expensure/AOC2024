@@ -28,7 +28,7 @@ def crossword_solver(lst):
 
     for y in range(rows):
         for x in range(cols):
-            if lst[y][x] == word[0]:  # Check if the starting letter matches
+            if lst[y][x] == word[0]:
                 for dy, dx in directions:
                     if check_word(y, x, dy, dx):
                         total += 1
